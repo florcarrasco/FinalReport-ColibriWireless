@@ -4,7 +4,7 @@
 
 The rise of fitness trackers marks a significant evolution in the landscape of personal health technology. Originally developed as basic heart monitors in the 1980s, these devices have undergone substantial transformation, becoming intricate systems that offer rich insights into various health metrics and physical activities. Modern fitness trackers not only measure heart rates but also track sleep patterns, count steps, monitor various forms of physical activity, and even provide GPS tracking for outdoor activities. This development has been driven by advances in sensor technology, data analytics, and consumer demand for wearable health monitoring devices.
 
-This project centres on the Colibri Wireless unit, an advanced inertial measurement unit (IMU). More details about the unit can be found here. The Colibri unit stands out due to its unique configuration of incorporating multiple sensors that capture three-dimensional acceleration, angular rates, and magnetic fields, providing high-resolution data. This project aims to leverage these capabilities to offer more precise and detailed monitoring of physical activities than its competitors.
+This project centres on the Colibri Wireless unit, an advanced inertial measurement unit (IMU). More details about the unit can be found [here](Additional_Information/TrivisioColibriwirelessBrochure.pdf). The Colibri unit stands out due to its unique configuration of incorporating multiple sensors that capture three-dimensional acceleration, angular rates, and magnetic fields, providing high-resolution data. This project aims to leverage these capabilities to offer more precise and detailed monitoring of physical activities than its competitors.
 ## Project Goals
 
 The primary goal of this project is to enhance the utility of the Colibri Wireless unit in health and activity monitoring applications, with a specific focus on integrating BMI (Body Mass Index) calculations to improve health risk assessment and activity monitoring accuracy. By analysing detailed data captured from various daily and sports activities under controlled conditions, coupled with BMI and related health metrics, we aim to:
@@ -17,12 +17,12 @@ The primary goal of this project is to enhance the utility of the Colibri Wirele
 ## Research Significance
 
 This research is significant as it contributes to the field of personal health monitoring, where accurate and real-time data analysis is crucial for preventive healthcare. By improving the performance and capabilities of the Colibri Wireless unit, the project aligns with the broader goal of advancing health technology to better meet the needs of both individuals and healthcare providers. Moreover, the findings from this study could inform future developments in wearable technology, helping to shape innovations that enhance user well-being and health management.
-Data Collection and Analysis Setup
+## Data Collection and Analysis Setup
 
 Data was collected from nine subjects equipped with three Colibri wireless IMUs and a BM-CS5SR heart-rate monitor. The subjects consisted of one female and eight males, aged 27.22 ± 3.31 years.
 ## Subject Details
 
-Comprehensive demographic and physiological data were collected for each subject, including specific measurements like age, gender, height, weight, resting heart rate, and maximum heart rate. Detailed individual subject information is available in Subject Information.
+Comprehensive demographic and physiological data were collected for each subject, including specific measurements like age, gender, height, weight, resting heart rate, and maximum heart rate. Detailed individual subject information is available in [Subject Information](Additional_Information/subjectInformation.pdf).
 ## Data Collection Hardware
 
 * IMUs: Three Colibri wireless inertial measurement units were used, placed over the wrist of the dominant arm, on the chest, and on the dominant side's ankle. These units sampled data at 100Hz, providing detailed measurements including 3D-acceleration, gyroscope, and magnetometer readings across multiple axes.
@@ -31,7 +31,7 @@ Comprehensive demographic and physiological data were collected for each subject
 ## Activities Performed
 
 
-The subjects performed a structured set of 12 basic activities outlined in the Data Collection Protocol, with additional optional activities suggested from a list containing a wide range of everyday, household, and sports activities. The basic activities included:
+The subjects performed a structured set of 12 basic activities outlined in the [Data Collection Protocol](Additional_Information/DataCollectionProtocol.pdf), with additional optional activities suggested from a list containing a wide range of everyday, household, and sports activities. The basic activities included:
 
   1. Lying
   2. Sitting
@@ -46,15 +46,15 @@ The subjects performed a structured set of 12 basic activities outlined in the D
  11. Ascending stairs
  12. Descending stairs
 
-Each activity was performed according to specific guidelines to ensure consistent data collection across subjects. A complete description of these activities, including their setup and execution, can be found in Description of Activities.
+Each activity was performed according to specific guidelines to ensure consistent data collection across subjects. A complete description of these activities, including their setup and execution, can be found in [Description of Activities](Additional_Information/DescriptionOfActivities.pdf).
 
 ## Data Collection Protocol
 
 Each subject followed a detailed protocol for the data collection, performing the specified activities in a controlled environment. The protocol ensured that data was collected systematically for each activity, capturing physiological responses accurately. The protocol also suggested additional optional activities, enhancing the dataset with diverse physical exertions.
-Summary of Collected Data
+## Summary of Collected Data
 
-Over 10 hours of data were collected, with nearly 8 hours labelled according to the 18 different activities performed. Due to the use of wireless sensors, some data points were missing, attributed to data dropping or hardware issues like connection losses or system crashes. Detailed summaries of the data collected for each activity by each subject are provided in Performed Activities Summary.
-Libraries and Modules Utilised
+Over 10 hours of data were collected, with nearly 8 hours labelled according to the 18 different activities performed. Due to the use of wireless sensors, some data points were missing, attributed to data dropping or hardware issues like connection losses or system crashes. Detailed summaries of the data collected for each activity by each subject are provided in [Performed Activities Summary](Additional_Information/PerformedActivitiesSummary.pdf).
+## Libraries and Modules Utilised
 
 For comprehensive data analysis and modelling, a variety of Python libraries and modules were employed, as detailed below:
 
@@ -87,7 +87,7 @@ For comprehensive data analysis and modelling, a variety of Python libraries and
 ## Predictive Hypothesis and Analytical Methodology
 
 
-The report hypothesizes that physiological metrics captured by the Colibri Wireless device can predict both the type and intensity of physical activity. The analysis involves the following key stages:
+The [report](FinalReport-ColibriWireless.pdf) hypothesizes that physiological metrics captured by the Colibri Wireless device can predict both the type and intensity of physical activity. The analysis involves the following key stages:
 
 1. **Activity Classification**  Utilizing supervised machine learning algorithms such as Random Forest and Support Vector Machines to categorize physical activities based on physiological inputs.
 2. **Energy Prediction Models:** Regression techniques were employed to estimate caloric expenditure and correlate it with specific physiological markers such as heart rate variability and accelerometer readings.
